@@ -1011,12 +1011,17 @@ section {
     .about-gallery {
         min-height: 0;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
     .about-photo {
         position: relative;
         width: 100%;
-        height: 240px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    /* Mobilde beyaz çerçeveyi kaldır */
+    .about-photo.field {
+        border: none;
     }
 }
