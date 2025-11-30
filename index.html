@@ -1,118 +1,115 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çetinkaya Tohumculuk - Kaliteli Tohum, Güvenilir Gelecek</title>
-    <meta name="description" content="Çetinkaya Tohumculuk - Türkiye'nin önde gelen tohum üreticisi. Kaliteli tohum çeşitleri, güvenilir hizmet ve sürdürülebilir tarım için yanınızdayız.">
-    <meta name="keywords" content="tohum, tohumculuk, çetinkaya, tarım, çiftçi, kaliteli tohum">
-    
-    <!-- Font Awesome -->
+    <title>Çetinkaya Tohumculuk | Verimli Topraklar, Güçlü Yarınlar</title>
+    <meta name="description" content="Çetinkaya Tohumculuk - Kaliteli ve verimli tohum üretimi.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader-logo">ÇETİNKAYA</div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-seedling"></i>
-                <span>Çetinkaya Tohumculuk</span>
-            </div>
-            
-            <div class="nav-menu" id="nav-menu">
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand">
+                <span class="brand-symbol">Ç</span>
+                <span class="brand-text">ÇETİNKAYA<br><span class="brand-sub">TOHUMCULUK</span></span>
+            </a>
+            <div class="nav-links">
                 <a href="#home" class="nav-link">Ana Sayfa</a>
                 <a href="#about" class="nav-link">Hakkımızda</a>
-                <a href="#products" class="nav-link">Ürünlerimiz</a>
-                <a href="#services" class="nav-link">Hizmetler</a>
+                <a href="#products" class="nav-link">Koleksiyon</a>
                 <a href="#contact" class="nav-link">İletişim</a>
             </div>
-            
-            <div class="nav-toggle" id="nav-toggle">
+            <button class="mobile-toggle" aria-label="Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
-            <div class="floating-seeds" aria-hidden="true">
-                <span></span><span></span><span></span><span></span><span></span><span></span>
+    <header id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge fade-up">KALİTE VE GÜVEN</div>
+            <h1 class="hero-title fade-up delay-1">
+                Toprağın Gücü,<br>
+                <span class="text-accent">Geleceğin Teminatı</span>
+            </h1>
+            <p class="hero-subtitle fade-up delay-2">
+                Anadolu'nun bereketli topraklarından, sofralarınıza uzanan güven. Yüksek verimli, hastalıklara dayanıklı kaliteli tohumlar.
+            </p>
+            <div class="hero-actions fade-up delay-3">
+                <a href="#products" class="btn btn-primary">Koleksiyonu Keşfet</a>
+                <a href="#contact" class="btn btn-outline">Bize Ulaşın</a>
             </div>
         </div>
-        <div class="hero-content">
-            <div class="container">
-                <h1 class="hero-title" data-aos="fade-up">
-                    <span class="brand-primary">Çetinkaya</span> <span class="brand-secondary">Tohumculuk</span>
-                </h1>
-                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                    Kaliteli tohum, güvenilir gelecek. Türkiye'nin önde gelen tohum satıcısı olarak 
-                    sürdürülebilir tarım için çalışıyoruz.
-                </p>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-                    <a href="#products" class="btn btn-primary">Ürünlerimizi Keşfedin</a>
-                    <a href="#contact" class="btn btn-secondary">Bizimle İletişime Geçin</a>
-                </div>
-            </div>
-        </div>
+
         <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            <span>Aşağı Kaydır</span>
+            <div class="line"></div>
         </div>
-    </section>
+    </header>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section-padding about-section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Hakkımızda</h2>
-                <p>20 yılı aşkın deneyimimizle tarım sektöründe güvenilir bir marka</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <h3>Misyonumuz</h3>
-                    <p>Çiftçilerimize en kaliteli tohum çeşitlerini sunarak, sürdürülebilir tarım ve 
-                    yüksek verim elde etmelerini sağlamak.</p>
-                    
-                    <h3>Vizyonumuz</h3>
-                    <p>Türkiye'nin en güvenilir tohum üreticisi olarak, modern tarım teknikleri ve 
-                    yenilikçi çözümlerle sektöre öncülük etmek.</p>
-                    
-                    <div class="stats">
-                        <div class="stat-item">
-                            <div class="stat-number">20+</div>
-                            <div class="stat-label">Yıllık Deneyim</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">100+</div>
-                            <div class="stat-label">Mutlu Müşteri</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">50+</div>
-                            <div class="stat-label">Tohum Çeşidi</div>
-                        </div>
+            <div class="grid-2 align-center">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="image-frame">
+                        <img src="assets/about.png" alt="Çetinkaya Tohumculuk Hakkımızda" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="exp-badge">
+                        <span class="exp-number">100%</span>
+                        <span class="exp-text">Müşteri<br>Memnuniyeti</span>
                     </div>
                 </div>
-                
-                <div class="about-image" data-aos="fade-left">
-                    <div class="about-gallery">
-                        <div class="about-photo owner">
-                            <img src="assets/b.png" alt="Firma Sahibi">
+                <div class="about-content reveal-right">
+                    <span class="section-subtitle">HİKAYEMİZ</span>
+                    <h2 class="section-title">Doğanın Kalbinden Gelen Ustalık</h2>
+                    <p class="section-desc">
+                        Çetinkaya Tohumculuk olarak, tarımın sadece bir iş değil, bir miras olduğuna inanıyoruz. Adana'nın verimli topraklarında filizlenen hayallerimiz, bugün Türkiye'nin dört bir yanındaki çiftçilerimizin hasadına bereket katıyor.
+                    </p>
+                    <p class="section-desc">
+                        Modern ıslah tekniklerini geleneksel tarım bilgisiyle harmanlayarak, iklim koşullarına dayanıklı ve yüksek verimli tohumlar satıyoruz.
+                    </p>
+
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Yüksek Kaliteli Üretim</span>
                         </div>
-                        <div class="about-photo field">
-                            <img src="assets/s.png" alt="Tarla Görseli">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Yüksek Çimlenme Oranı</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Teknik Destek</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sürdürülebilir Tarım</span>
                         </div>
                     </div>
                 </div>
@@ -121,149 +118,77 @@
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="products">
+    <section id="products" class="section-padding products-section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Ürünlerimiz</h2>
-                <p>En kaliteli tohum çeşitleri ile yüksek verim garantisi</p>
+            <div class="section-header text-center reveal-up">
+                <span class="section-subtitle">ÜRÜN PORTFÖYÜ</span>
+                <h2 class="section-title">Seçkin Tohum Çeşitlerimiz</h2>
+                <p class="section-intro">Profesyonel üreticiler için özenle geliştirilmiş, pazar değeri yüksek çeşitler.
+                </p>
             </div>
-            
-            <div class="products-grid">
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="product-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Marul Tohumları</h3>
-                    <p>Kıvırcık ve baş marul çeşitlerinde taze, canlı ve homojen baş oluşumu</p>
-                    <div class="product-features">
-                        <span>Erken Hasat</span>
-                        <span>Hastalık Direnci</span>
-                        <span>Yüksek Verim</span>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3>Karnabahar Tohumları</h3>
-                    <p>Beyaz baş yapısı, düzgün doku ve geniş ekim zamanına uygun çeşitler</p>
-                    <div class="product-features">
-                        <span>Soğuk Dayanımı</span>
-                        <span>Beyaz ve Sık Baş</span>
-                        <span>Yüksek Performans</span>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="product-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Lahana Tohumları</h3>
-                    <p>Sık ve dolgun baş, iyi raf ömrü ve bölgesel koşullara uyumlu çeşitler</p>
-                    <div class="product-features">
-                        <span>Sık Baş</span>
-                        <span>Uzun Raf Ömrü</span>
-                        <span>Bölge Uyumu</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Hizmetlerimiz</h2>
-                <p>Çiftçilerimize sunduğumuz kapsamlı hizmetler</p>
-            </div>
-            
-            <div class="services-content">
-                <div class="service-item" data-aos="fade-right" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-truck"></i>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card reveal-up delay-1">
+                    <div class="product-img-box">
+                        <div class="product-icon"><i class="fas fa-leaf"></i></div>
                     </div>
-                    <div class="service-text">
-                        <h3>Hızlı Teslimat</h3>
-                        <p>Türkiye genelinde 24-48 saat içinde tohum teslimatı</p>
+                    <div class="product-info">
+                        <h3>Marul</h3>
+                        <p class="p-desc">Kıvırcık, Yedikule & Iceberg çeşitleri. Raf ömrü uzun, sapa kalkmaya dirençli.
+                        </p>
+                        <a href="#contact" class="link-arrow">Bilgi Al <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                
-                <div class="service-item" data-aos="fade-left" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <div class="service-text">
-                        <h3>Teknik Destek</h3>
-                        <p>Uzman ekibimizden ekim ve bakım konularında destek</p>
-                    </div>
-                </div>
-                
-                <div class="service-item" data-aos="fade-right" data-aos-delay="300">
-                    <div class="service-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="service-text">
-                        <h3>Kalite Garantisi</h3>
-                        <p>TSE ve uluslararası standartlarda kalite belgeleri</p>
-                    </div>
-                </div>
-                
-                
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>İletişim</h2>
-                <p>Bizimle iletişime geçin, size yardımcı olalım</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Adres</h3>
-                            <p>Onur Mahallesi Turhan Cemal Beriker Bulvari<br>Kiza İş Merkezi A3 Blok Kat 1 No 103 <br> Seyhan/Adana</p>
-                        </div>
+                <!-- Product 2 -->
+                <div class="product-card reveal-up delay-2">
+                    <div class="product-img-box">
+                        <div class="product-icon"><i class="fas fa-spa"></i></div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Telefon</h3>
-                            <p>+90 530 164 16 83</a></p>
-                            <p>+90 532 667 54 19</a></p>
-                        </div>
+                    <div class="product-info">
+                        <h3>Karnabahar</h3>
+                        <p class="p-desc">Beyaz baş ve kışlık çeşitler. Sıkı baş yapısı ve mükemmel örtme yeteneği.</p>
+                        <a href="#contact" class="link-arrow">Bilgi Al <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>E-posta</h3>
-                            <p><a href="mailto:info@cetinkayatohumculuk.com">info@cetinkayatohumculuk.com</a></p>
-                        </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card reveal-up delay-3">
+                    <div class="product-img-box">
+                        <div class="product-icon"><i class="fas fa-seedling"></i></div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Çalışma Saatleri</h3>
-                            <p>Pazartesi - Cuma: 08:00 - 18:00<br>Cumartesi: 08:00 - 13:00</p>
-                        </div>
+                    <div class="product-info">
+                        <h3>Lahana</h3>
+                        <p class="p-desc">Sıkı baş yapılı, çatlamaya dayanıklı, nakliyeye uygun sanayi ve sofralık çeşitler.
+                        </p>
+                        <a href="#contact" class="link-arrow">Bilgi Al <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card reveal-up delay-1">
+                    <div class="product-img-box">
+                        <div class="product-icon"><i class="fas fa-pepper-hot"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Biber</h3>
+                        <p class="p-desc">Dolmalık, Sivri, Kapya ve Çarliston. Yüksek verim ve parlak meyve kalitesi.
+                        </p>
+                        <a href="#contact" class="link-arrow">Bilgi Al <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card reveal-up delay-2">
+                    <div class="product-img-box">
+                        <div class="product-icon"><i class="fas fa-apple-alt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Domates</h3>
+                        <p class="p-desc">Salkım, Pembe ve Oturak çeşitler. Hastalıklara dayanıklı, lezzetli ve aromatik.
+                        </p>
+                        <a href="#contact" class="link-arrow">Bilgi Al <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -271,68 +196,56 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="contact" class="main-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-seedling"></i>
-                        <span>Çetinkaya Tohumculuk</span>
+            <div class="footer-top">
+                <div class="footer-brand-col">
+                    <div class="footer-brand">
+                        <span class="brand-symbol">Ç</span>
+                        <span class="brand-text">ÇETİNKAYA<br><span class="brand-sub">TOHUMCULUK</span></span>
                     </div>
-                    <p>Kaliteli tohum, güvenilir gelecek. 20 yılı aşkın deneyimimizle 
-                    tarım sektöründe hizmet veriyoruz.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <p>Anadolu'nun bereketli topraklarından, sofralarınıza uzanan güven. Kaliteli tohumlar, güçlü gelecekler.
+                    </p>
+                </div>
+                <div class="footer-contact-col">
+                    <h4>İletişim Bilgileri</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                            Onur Mahallesi Turhan Cemal Beriker Bulvarı<br> Kiza İş Merkezi A3 Blok Kat 1 No 103<br> Seyhan/Adana
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>
+                            <a href="tel:+905301641683">+90 530 164 16 83</a><br>
+                            <a href="tel:+905326675419">+90 532 667 54 19</a>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:info@cetinkayatohumculuk.com.tr">info@cetinkayatohumculuk.com.tr</a></p>
                     </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h3>Hızlı Linkler</h3>
-                    <ul>
-                        <li><a href="#home">Ana Sayfa</a></li>
-                        <li><a href="#about">Hakkımızda</a></li>
-                        <li><a href="#products">Ürünlerimiz</a></li>
-                        <li><a href="#services">Hizmetler</a></li>
-                        <li><a href="#contact">İletişim</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Ürün Kategorileri</h3>
-                    <ul>
-                        <li><a href="#products">Marul Tohumları</a></li>
-                        <li><a href="#products">Karnabahar Tohumları</a></li>
-                        <li><a href="#products">Lahana Tohumları</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>İletişim Bilgileri</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Onur Mahallesi Turhan Cemal Beriker Bulvari<br>Kiza İş Merkezi A3 Blok Kat 1 No 103 Seyhan/Adana</p>
-                    <p><i class="fas fa-phone"></i>  <p>+90 530 164 16 83</a></p>
-                    <p>+90 532 667 54 19</a></p></p>
-                    <p><i class="fas fa-envelope"></i> info@cetinkayatohumculuk.com</p>
+                <div class="footer-hours-col">
+                    <h4>Çalışma Saatleri</h4>
+                    <div class="hours-item">
+                        <span class="day">Pazartesi - Cuma:</span>
+                        <span class="time">08:00 - 17:00</span>
+                    </div>
+                    <div class="hours-item">
+                        <span class="day">Cumartesi:</span>
+                        <span class="time">08:00 - 13:00</span>
+                    </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy;  Çetinkaya Tohumculuk. Tüm hakları saklıdır.</p>
+                <p>&copy; 2024 Çetinkaya Tohumculuk. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>
